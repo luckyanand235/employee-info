@@ -1,0 +1,82 @@
+
+.font-style {
+    font-family: sans-serif;
+}
+
+.font-roboto {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color:var(--font-gray);
+}
+
+.font-c {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.f-1 {
+    font-size: 1rem;
+}
+
+.f-75 {
+    font-size: 0.75rem;
+}
+.f-18 {
+    font-size: 18px;
+}
+.f-16 {
+    font-size: 16px;
+}
+.f-14 {
+    font-size: 14px;
+}
+.f-12 {
+    font-size: 12px;
+}
+.f-10 {
+    font-size: 10px;
+}
+.f-8 {
+    font-size: 8px;
+}
+
+.bold {
+    font-weight: bold;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.justify-spacearound {
+    justify-content: space-around;
+}
+
+.justify-spacebetween {
+    justify-content: space-between;
+}
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.color-primary {
+    color: var(--primary-color);
+}
+
+.primary-btn {
+    color: var(--white) !important;
+    background-color: var(--primary-color) !important;
+}
+
+.secondary-btn {
+    color: var(--primary-color) !important;
+    background-color: var(--btn-background) !important;
+}

@@ -1,0 +1,46 @@
+
+<app-no-employee *ngIf="currEmployeeList.length === 0 && prevEmployeeList.length === 0;"></app-no-employee>
+<div class="row" *ngIf="currEmployeeList.length !== 0">
+    <div class="row">
+        <div class="col-md-1 col-sm-0"></div>
+        <div class="col-md-8 col-sm-12 subheader-style">
+            <p class="font-c mt-3 ms-3 f-16">Current employees</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-1 col-sm-0"></div>
+        <div class="col-md-8 col-sm-12 employee-container p-0">
+            <div *ngFor="let employee of currEmployeeList; let i = index">
+                <app-employee-data [employeeData]="employee" [i]=i ></app-employee-data>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row" *ngIf="prevEmployeeList.length">
+    <div class="row">
+        <div class="col-md-1 col-sm-0"></div>
+        <div class="col-md-8 col-sm-12 subheader-style">
+            <p class="font-c mt-3 ms-3 f-16">Previous Employee</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-1 col-sm-0"></div>
+        <div class="col-md-8 col-sm-12 employee-container p-0">
+            <div *ngFor="let employee of prevEmployeeList; let i = index">
+                <app-employee-data [employeeData]="employee" [i]="i + currEmployeeList.length"></app-employee-data>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="background-gray">
+    <p class="m-4">
+        Please swipe left to delete
+    </p>
+    
+</div>
+
+<button class="add-button p-0">
+    <img src="../../../assets/images/add-btn.png" alt="" (click)="addEmployee()">
+</button>

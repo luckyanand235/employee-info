@@ -1,0 +1,16 @@
+<section class="font-style pt-2 pb-2">
+    <div class="employee-info"[ngClass]="getClass(i)" [ngClass]="{'swiped': swipedIndex === i}" (swipeleft)="onSwipeLeft(i)" (swipeRight)="onSwipeRight(i)">
+        <div class="ps-3 font-c f-16"><a class="no-style" [routerLink]="['/employee/edit']" [queryParams]="{id: employeeData.id}">{{ employeeData.employeeData.employeeName }}</a></div>
+        <div class="ps-3 pt-1 font-roboto f-14">{{ employeeData.employeeData.employeeType }}</div>
+        <div> 
+            <span class="ps-3 font-roboto f-8">From {{ formatDate(employeeData.employeeData.startDate) }}</span> 
+            <span class="ps-2 font-roboto f-8" *ngIf="employeeData.employeeData.endDate != null">To {{ formatDate(employeeData.employeeData.endDate) }}</span>
+        </div>
+    </div>
+    
+</section>
+<button *ngIf="swipedIndex === i" class="delete-button"  [ngClass]="{'swiped': swipedIndex === i}" (click)="deleteEmployee(i)">Delete</button>
+
+
+<div class="line"></div>
+

@@ -1,0 +1,27 @@
+<div mat-dialog-content>
+    <div class="d-flex justify-spacebetween">
+        <button mat-button class="width-140 m-1" [ngClass]="getButtonClass('today')" (click)="today()">Today</button>
+        <button mat-button class="width-140 m-1" [ngClass]="getButtonClass('nextMonday')" (click)="nextMonday()">Next Monday</button>
+    </div>
+    <div class="d-flex justify-spacebetween">
+        <button mat-button class="width-140 m-1" [ngClass]="getButtonClass('nextTuesday')" (click)="nextTuesday()">Next Tuesday</button>
+        <button mat-button class="width-140 m-1" [ngClass]="getButtonClass('afterOneWeek')" (click)="afterOneWeek()">After 1 week</button>
+    </div>
+    <div *ngIf="showCalendar">
+        <mat-calendar [startAt]="startMonth" [selected]="selectedDate.value" (selectedChange)="setDate($event)"></mat-calendar>
+    </div>
+</div>
+
+<div mat-dialog-actions>
+    <div class="row width-380">
+        <div class="d-flex justify-spacebetween color-primary">
+            <div class="ps-3 d-flex">
+                <mat-icon class="color-primary height-1 color-primary0">event</mat-icon> <p class="mt-1 ms-1">{{ selectedDate.value | date: 'd MMM YYYY' }}</p>
+            </div>
+            <div>
+                <button class="secondary-btn" mat-stroked-button mat-dialog-close>Cancel</button>
+                <button class="primary-btn" mat-stroked-button (click)="save()">Save</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+
+
+.image-container {
+    height: calc(100vh - 3rem); /* Or any specific height you need */
+    width: 100%; /* Set to the desired width if needed */
+    display: flex; /* Optional: used to center content, can be configured */
+    justify-content: center; /* Optional: horizontally center the image */
+    align-items: center; /* Optional: vertically center the image */
+    background-color: var(--secondary-color);
+    flex-direction: column;
+  }
+  
+  .responsive-image {
+    max-height: 100%; /* Image will not exceed the container's height */
+    width: auto; /* Maintain the aspect ratio */
+  }

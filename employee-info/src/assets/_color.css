@@ -1,0 +1,15 @@
+
+:root {
+    --primary-color: #1DA1F2; /* Example of a color variable */
+    --secondary-color: #F2F2F2;
+    --font-gray: #949C9E;
+    --gray-background: #f2f2f2;
+    --btn-background: #EDF8FF;
+    --white: #ffffff;
+  }
+
+  .mat-primary {
+    color: var(--primary-color);
+  }
+
+
