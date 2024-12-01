@@ -1,5 +1,7 @@
 
 <app-no-employee *ngIf="currEmployeeList.length === 0 && prevEmployeeList.length === 0;"></app-no-employee>
+<div class="height-scroll">
+
 <div class="row" *ngIf="currEmployeeList.length !== 0">
     <div class="row">
         <div class="col-md-1 col-sm-0"></div>
@@ -39,6 +41,7 @@
         Please swipe left to delete
     </p>
     
+</div>
 </div>
 
 <button class="add-button p-0">

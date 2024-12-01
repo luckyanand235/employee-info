@@ -8,6 +8,13 @@
     background-color: var(--primary-color);
 }
 
+
+.height-scroll {
+    height: 70vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
 .subheader-style {
     height: 3rem;
     background-color: var(--gray-background);
