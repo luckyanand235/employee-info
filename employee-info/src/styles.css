@@ -80,3 +80,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     color: var(--primary-color) !important;
     background-color: var(--btn-background) !important;
 }
+
+
+.height-80 {
+    height: calc(80vh - 3rem) !important;
+}

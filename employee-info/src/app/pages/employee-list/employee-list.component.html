@@ -9,7 +9,7 @@
     </div>
     <div class="row">
         <div class="col-md-1 col-sm-0"></div>
-        <div class="col-md-8 col-sm-12 employee-container p-0">
+        <div class="col-md-8 col-sm-12 p-0">
             <div *ngFor="let employee of currEmployeeList; let i = index">
                 <app-employee-data [employeeData]="employee" [i]=i ></app-employee-data>
             </div>
@@ -25,7 +25,7 @@
     </div>
     <div class="row">
         <div class="col-md-1 col-sm-0"></div>
-        <div class="col-md-8 col-sm-12 employee-container p-0">
+        <div class="col-md-8 col-sm-12 p-0">
             <div *ngFor="let employee of prevEmployeeList; let i = index">
                 <app-employee-data [employeeData]="employee" [i]="i + currEmployeeList.length"></app-employee-data>
             </div>

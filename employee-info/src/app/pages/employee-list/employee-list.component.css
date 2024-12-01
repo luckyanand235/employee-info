@@ -2,7 +2,7 @@
 .add-button {
     border-radius: 6px;
     position: fixed;
-    top: 90vh;
+    top: 80vh;
     left: 80vw;
     border: 0px solid;
     background-color: var(--primary-color);
@@ -15,16 +15,13 @@
     color: var(--primary-color);
 }
 
-.employee-container {
-    position: relative;
-    overflow: hidden;
-  }
+
 
 .background-gray {
     position: fixed;
-    top: 88vh;
+    top: 80vh;
     width: 100%;
-    height: 20vh;
+    height: 30vh;
     background-color: var(--gray-background);
 }
 

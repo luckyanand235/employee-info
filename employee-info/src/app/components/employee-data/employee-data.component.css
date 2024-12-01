@@ -15,12 +15,15 @@
     color: var(--primary-color);
 }
 
-
+.employee-container {
+  position: relative;
+  overflow: hidden;
+}
   
-  .employee-info {
-    padding: 10px;
-    transition: transform 0.3s ease;
-  }
+.employee-info {
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
   
   .delete-button {
     position: absolute;
@@ -39,7 +42,7 @@
   .employee-info.swiped {
     transform: translateX(-80px); /* Slide to reveal the delete button */
   }
-  
   .swiped.delete-button {
-    display: flex;
+    display: flex; /* Show button when swiped */
   }
+  
